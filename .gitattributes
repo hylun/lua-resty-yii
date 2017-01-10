@@ -1,0 +1,4 @@
+*.js linguist-language=Lua
+*.css linguist-language=Lua
+*.html linguist-language=Lua
+*.lua linguist-language=Lua
