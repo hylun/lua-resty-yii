@@ -1,0 +1,22 @@
+return [[
+{%
+context.title = '请登录'
+%}
+<div class="panel panel-info borderdiv">
+    <h3 style="margin-bottom:30px" >账号登录</h3>
+    <form id="loginform" class="form-horizontal" action="?act=site.login" method="post">
+    <div>
+        <input type="text" class="form-control" id="username" name="username" value="{{model.username}}" placeholder="账号：请输入用户名"  autofocus tabIndex="1" required>
+        <div class="help-block">&nbsp;{{model.err.username}}</div>
+    </div> 
+    <div>
+        <input type="password" class="form-control" id="password" name="password" value="{{model.password}}" placeholder="密码：请输入登录密码"  tabIndex="2" required>
+        <div class="help-block">&nbsp;{{model.err.password}}</div>
+    </div> 
+    <div style="margin-bottom:30px" >
+        <button type="submit" class="btn btn-primary" tabIndex="4">登录</button>
+        <button type="reset" class="btn btn-warning" style="margin-left:15px" tabIndex="5">重置</button>
+    </div>
+    </form> 
+</div>
+]]

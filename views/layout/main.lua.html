@@ -1,0 +1,45 @@
+return [[
+<!Doctype html>
+<html lang="{{web.language}}">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{title and lang.siteName..'-'..title or lang.siteName}}</title>
+    <link href="{*web.staticUrl*}/css/bootstrap.css" rel="stylesheet" type="text/css"／>
+    <link href="{*web.staticUrl*}/css/site.css" rel="stylesheet" type="text/css"／>
+</head>
+<body>
+<div class="wrap">
+    <nav id="w0" class="header navbar-fixed-top navbar" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="?act=site.index">{{lang.siteName}}</a>
+            </div>
+            <div id="w0-collapse" class="collapse navbar-collapse">
+                <ul id="w1" class="navbar-nav navbar-right nav">
+                    <li><a href="?act=site.index" class="{{action=='index' and 'active' or ''}}">首页</a></li>
+                    <li><a href="?act=site.guide" class="{{action=='guide' and 'active' or ''}}">文档</a></li>
+                    {%if not user.isLogin then%}
+                    <li><a href="?act=site.login" class="{{action=='login' and 'active' or ''}}">登录</a></li>
+                    {%else%}
+                    <li><a href="?act=site.logout">登出[{{user.username}}]</a></li>
+                    {%end%}
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">{*contentView*}</div>            
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <p class="pull-left">&copy; Yuanlun He 2017</p>
+        <p class="pull-right">Powered by <a href="http://helun.blog.51cto.com/" target="_blank">Alun</a></p>
+    </div>
+</footer>
+
+<script src="{*web.staticUrl*}/js/jquery.js"></script>
+<script src="{*web.staticUrl*}/js/bootstrap.js"></script>
+</body>
+</html>
+]]
