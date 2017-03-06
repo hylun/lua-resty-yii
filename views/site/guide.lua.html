@@ -207,7 +207,7 @@ end
 &#123;# comments #&#125;, 所有&#123;＃和＃&#125;之间的内容都被认为是注释掉的（即不输出或执行）
 
 与lua-resty-template的普通用法不同，所有视图文件，以lua文件的形式保存在views子目录下，文件名为*.lua.html
-controller中的render方法渲染试图时，会已require的形式去获取视图内容
+controller中的render方法渲染试图时，会以require的形式去获取视图内容
 
 views/layout 目录存放框架视图，渲染视图时默认使用views/layout/main.lua.html，
 controller中可通过layout属性设置使用不同的框架视图，如：
