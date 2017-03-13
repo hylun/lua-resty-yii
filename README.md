@@ -1,8 +1,7 @@
 # lua-resty-yii
 
 	一个基于OpenResty的仿Yii的web框架，通过本框架能够极大降低openresty的开发入门门槛。
-**已创建群，239615726，欢迎大家加入，一起学习交流！**!
-[点击扫码加群239615726](https://static.oschina.net/uploads/space/2017/0313/112312_AYyi_117082.png)
+**已创建群，239615726，欢迎大家加入，一起学习交流！** [点击扫码加群239615726](https://static.oschina.net/uploads/space/2017/0313/112312_AYyi_117082.png)
 
 # 系统要求
 
