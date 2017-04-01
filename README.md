@@ -10,13 +10,12 @@
 # 快速开始
 	
     Linux：修改runtime/start.sh中/usr/local/openresty/bin/openresty路径为您所安装的openresty路径
-	开始
-	runtime/start.sh
-	停止
-	runtime/stop.sh
+	开始，bash中cd到当前目录，执行：runtime/start.sh
+	停止，bash中cd到当前目录，执行：runtime/stop.sh
 
-    开始，双击runtime/win-start.bat
-    停止，双击runtime/win-stop.bat
+    Windows：修改runtime/start.bat中D:\openresty-1.11.2.2-win32\路径为您所安装的openresty路径
+    开始，双击：runtime/win-start.bat
+    停止，双击：runtime/win-stop.bat
 
 # 开发说明
 ## 应用结构
