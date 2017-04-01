@@ -6,4 +6,5 @@ if [ ! -d " runtime/logs" ]; then
   mkdir runtime/logs
 fi
 
+#如果找不到openresty，请修改以下openresty的路径
 /usr/local/openresty/bin/openresty -p `pwd`/runtime -c `pwd`/runtime/nginx.conf
