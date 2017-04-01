@@ -1,4 +1,4 @@
---Seesion处理类
+--session处理类
 --version:0.0.1
 --Copyright (C) Yuanlun He.
 

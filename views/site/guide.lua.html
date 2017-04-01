@@ -287,8 +287,8 @@ util.set_cookie(name,value,expire,path,domain,secure,httponly)
 local session = require "vendor.Session"
 // 在Controller方法里可以直接通过self.session调用
 --session.start()	--启用session，会去设置一个_sessionid的cookie，此操作可以省略
---session.exptime = 1800 --修改seesion失效时间时，默认30分钟
---session.cache = ngx_shared['seesion_cache'] --默认使用ngx的缓存，对应runtime/nginx.conf里的lua_shared_dict配置项
+--session.exptime = 1800 --修改session失效时间时，默认30分钟
+--session.cache = ngx_shared['session_cache'] --默认使用ngx的缓存，对应runtime/nginx.conf里的lua_shared_dict配置项
 --session.cache = require("vendor.Memcache"):new{host="127.0.0.1",port="11211"} --使用memcached缓存打开此配置
 
 local sessions = session.get()

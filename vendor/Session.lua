@@ -1,4 +1,4 @@
---Seesion处理类
+--session处理类
 --version:0.0.1
 --Copyright (C) Yuanlun He.
 
@@ -19,8 +19,8 @@ local req = require("vendor.Request")
 
 local _M = {
 	_VERSION='0.01',
-	exptime = 1800, --默认seesion失效时间30分钟
-    cache = ngx_shared['seesion_cache'], --默认使用ngx的缓存
+	exptime = 1800, --默认session失效时间30分钟
+    cache = ngx_shared['session_cache'], --默认使用ngx的缓存
 }
 
 local function get_sessionid() --获取已设置的cookie
