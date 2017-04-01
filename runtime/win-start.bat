@@ -12,4 +12,4 @@ set "pwd=%cd%"
 
 if not exist runtime\logs md runtime\logs
 
-start %pwd%\runtime\openresty-1.11.2.2-win32\nginx -p  %pwd%\runtime -c  %pwd%\runtime\nginx.conf
+start D:\openresty-1.11.2.2-win32\nginx -p  %pwd%\runtime -c  %pwd%\runtime\nginx.conf
