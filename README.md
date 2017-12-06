@@ -150,7 +150,7 @@ function _M:indexAction()   --The action method name must be name + Action
         totalCount = query.count(),     
     }
 
-    local list = query.orderBy('create_time desc').page(page).all() --使用查询器查询分页数据集
+    local list = query.orderBy('create_time desc').page(page).all()
     
     return self:render('index',{
         page = page,
