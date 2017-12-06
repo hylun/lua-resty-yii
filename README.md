@@ -508,7 +508,7 @@ local util = require ("vendor.Util")
 value = util.mescape (value)
 ```
 
-lua-resty-yii is available under the MIT license. See the [LICENSE file] [1]
+lua-resty-yii is available under the MIT license. See the [LICENSE file][1]
 for more information.
 
 [1]: ./LICENSE.txt
